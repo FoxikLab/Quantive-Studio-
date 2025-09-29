@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Mountain Riders™</title>
@@ -9,27 +9,27 @@
   <header>
     <h1>Mountain Riders™</h1>
     <nav class="nav-bar">
-      <button onclick="showSection('home')">Domů</button>
-      <button onclick="showSection('play')">Hrát</button>
-      <button onclick="showSection('shop')">Obchod</button>
-      <button onclick="showSection('updates')">Novinky</button>
-      <button class="account-btn" onclick="toggleLogin()">Přihlásit se</button>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('play')">Play</button>
+      <button onclick="showSection('shop')">Shop</button>
+      <button onclick="showSection('updates')">Updates</button>
+      <button class="account-btn" onclick="toggleLogin()">Log In</button>
     </nav>
   </header>
 
   <main>
     <section id="home" class="section active">
-      <h2>Vítej, jezdo!</h2>
-      <p>Vyber si trail, připrav gear a vyraž s crew.</p>
+      <h2>Welcome Rider</h2>
+      <p>Choose your trail, gear up, and ride with the crew.</p>
     </section>
 
     <section id="play" class="section">
-      <h2>Spustit hru</h2>
-      <p>Klikni na tlačítko a začni svou horskou jízdu.</p>
+      <h2>Launch Game</h2>
+      <p>Click the button to start your mountain adventure.</p>
     </section>
 
     <section id="shop" class="section">
-      <h2>Obchod s vybavením</h2>
+      <h2>Gear Shop</h2>
       <ul>
         <li>Trail Pack Alpha</li>
         <li>Forest Overlay</li>
@@ -38,30 +38,5 @@
     </section>
 
     <section id="updates" class="section">
-      <h2>Novinky</h2>
-      <p>Verze 1.3.2 — Přidán login, overlay manager a trail selector.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Mountain Riders™ Crew</p>
-  </footer>
-
-  <!-- Login Modal -->
-  <div class="modal hidden" id="loginModal">
-    <div class="modal-content">
-      <h2>Přihlášení</h2>
-      <form id="login-form">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Heslo" required>
-        <div class="modal-buttons">
-          <button type="submit">Přihlásit se</button>
-          <button type="button" onclick="toggleLogin()">Zrušit</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      <h2>Latest Updates</h2>
+      <p>Version 1.3.
