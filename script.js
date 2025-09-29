@@ -1,7 +1,22 @@
-// Crew interakce přijdou později
-console.log("Quantive Studio™ loaded");
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
 
-document.getElementById("enterBtn").addEventListener("click", function() {
-  document.getElementById("crewSection").style.display = "block";
-  this.style.display = "none"; // schová tlačítko po kliknutí
+function toggleModal() {
+  document.getElementById('loginModal').classList.toggle('hidden');
+}
+
+document.getElementById('login-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
+
+  if (email && password) {
+    console.log('Logging in with:', email, password);
+    alert('Login successful (mock)');
+    toggleModal();
+  } else {
+    alert('Please fill in both fields.');
+  }
 });
