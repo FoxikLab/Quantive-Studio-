@@ -1,124 +1,66 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
-  overflow: hidden;
-  color: #fff;
-}
-
-.container {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding-top: 100px;
-}
-
-h1 {
-  font-size: 3em;
-  color: #00ffe0;
-  text-shadow: 0 0 15px #00ffe0;
-}
-
-p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 15px 30px;
-  background: #00ffe0;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #00ffe0;
-}
-
-.forest {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.tree {
-  position: absolute;
-  bottom: 0;
-  width: 80px;
-  height: 200px;
-  background: linear-gradient(to top, #004400, #00aa00);
-  border-radius: 40px;
-  animation: sway 10s infinite linear;
-  opacity: 0.6;
-}
-
-.tree:nth-child(1) { left: 5%; animation-delay: 0s; }
-tree:nth-child(2) { left: 20%; animation-delay: 2s; }
-.tree:nth-child(3) { left: 40%; animation-delay: 4s; }
-.tree:nth-child(4) { left: 60%; animation-delay: 6s; }
-.tree:nth-child(5) { left: 80%; animation-delay: 8s; }
-
-@keyframes sway {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(10px); }
-  100% { transform: translateX(0); }
-}
+/* === Forest-Tech Crew Style === */
 
 body {
   margin: 0;
   padding: 0;
-  background: url('assets/mtb-rider.png') no-repeat center center fixed;
-  background-size: cover;
-  background-color: black;
+  background: linear-gradient(to bottom right, #0b2e13, #1a3f2b);
   font-family: 'Segoe UI', sans-serif;
-  color: white;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: radial-gradient(circle at center, rgba(0,255,255,0.1), rgba(0,0,0,0.8));
-  z-index: -1;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: url('assets/mtb-rider.png') no-repeat center center;
-  background-size: cover;
-  filter: blur(3px);
-  z-index: -2;
-}
-
-body.crew-zone {
-  background-color: #000;
-  color: #00ffff;
-  font-family: 'Segoe UI', sans-serif;
+  color: #d0d0d0;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
+  background-image: url('assets/forest-bg.png'); /* volitelný obrázek pozadí */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.download-button {
+h1 {
+  font-size: 42px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.status {
+  font-size: 20px;
+  color: #ff6600;
+  margin-top: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff6600;
+}
+
+.button {
   display: inline-block;
   padding: 15px 30px;
   background-color: #00ffff;
-  color: black;
+  color: #0b2e13;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   border-radius: 8px;
   box-shadow: 0 0 15px #00ffff;
-  margin-top: 30px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-top: 40px;
 }
-.download-button:hover {
+
+.button:hover {
   transform: scale(1.05);
+  background-color: #00e0e0;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
