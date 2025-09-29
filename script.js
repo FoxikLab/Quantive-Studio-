@@ -3,7 +3,7 @@ function showSection(id) {
   document.getElementById(id).classList.add('active');
 }
 
-function toggleModal() {
+function toggleLogin() {
   document.getElementById('loginModal').classList.toggle('hidden');
 }
 
@@ -13,10 +13,9 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
   const password = document.getElementById('password').value.trim();
 
   if (email && password) {
-    console.log('Logging in with:', email, password);
-    alert('Login successful (mock)');
-    toggleModal();
+    alert(`Přihlášení úspěšné jako ${email} (mock test)`);
+    toggleLogin();
   } else {
-    alert('Please fill in both fields.');
+    alert('Vyplň prosím email i heslo.');
   }
 });
