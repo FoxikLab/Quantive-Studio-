@@ -25,6 +25,7 @@ header h1 {
   gap: 15px;
   margin-top: 15px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .nav-bar button {
@@ -49,6 +50,28 @@ header h1 {
 
 .account-btn:hover {
   background-color: #1976d2;
+}
+
+.account-menu {
+  position: relative;
+}
+
+.account-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #2e2e2e;
+  border: 1px solid #4caf50;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+.account-dropdown.hidden {
+  display: none;
 }
 
 main {
@@ -153,6 +176,4 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  from { opacity: 0; transform: translateY(
